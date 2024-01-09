@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, } from "react-bootstrap";
-import { GoLocation } from 'react-icons/go';
-import { BsTelephoneOutbound } from 'react-icons/bs';
-import { MdOutlineEmail } from 'react-icons/md';
+import Particle from "../Particle";
+
+
 function Contact() {
 
     return (
         <>
-
             <section className="mb-4 contact">
                 <Container >
+                <Particle />
                     <h2 className="h1-responsive font-weight-bold text-center my-4">Let's Talk</h2>
                     <Container >
                         <div className="row d-flex justify-content-center align-items-center mb-3">

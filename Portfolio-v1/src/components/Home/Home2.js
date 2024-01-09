@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import krishna_formal from "../../Assets/Krishna_formal.png";
+import laptopImg from "../../Assets/about.png";
 
 function Home2() {
   return (
@@ -53,7 +54,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={krishna_formal} style={{"maxWidth": "70%"}} className="img-fluid" alt="avatar" />
+              <img src={laptopImg} style={{"maxWidth": "120%"}} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>

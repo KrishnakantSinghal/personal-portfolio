@@ -9,7 +9,9 @@ function Type() {
         strings: [
           "Software Developer",
           "Python Developer",
-          "Django Developer",
+          "Full-Stack Developer",
+          "ReactJS Developer",
+          "Django Developer"
         ],
         autoStart: true,
         loop: true,

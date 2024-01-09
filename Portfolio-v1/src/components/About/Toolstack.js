@@ -1,32 +1,26 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiLinux,
-  SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiVercel,
-} from "react-icons/si";
+
+import tools from "./ToolstackValue";
+
+// Create a Tool component to render each tool
+const Tool = ({ Icon, name }) => (
+  <Col xs={4} md={2} className="tech-icons">
+    <Icon />
+    <div style={{ display: "grid" }}>
+      <b className="techstack">{name}</b>
+    </div>
+  </Col>
+);
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
-      </Col>
+    {tools?.map((tool, index) => (
+      <Tool key={index} Icon={tool?.icon} name={tool?.name} />
+    ))}
     </Row>
+
   );
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import { AiOutlineCheck } from 'react-icons/ai'
 
 function AboutCard() {
@@ -9,28 +8,30 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hell Everyone, I am <span className="purple">Tilak Khatri </span>
-            from <span className="purple"> Pokhara, Nepal.</span>
-            <br />I am a Engineering student persuing computer engineering from IOE,Nepal.
-            <br />
+            Hello Everyone, I am <span className="purple">Krishna Kant Singhal </span>
+            from <span className="purple"> Rajasthan, India. </span>
+            A dynamic software developer proficient in Python and React. 
+            Bridging the gap between Python's backend prowess and React's frontend elegance,
+            specializes in creating harmonious, full-stack applications.
+            <br/><br/>
             Apart from My Field, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <AiOutlineCheck /> Playing Games
+              <AiOutlineCheck /> Singing
             </li>
             <li className="about-activity">
-              <AiOutlineCheck /> Writting Tech Blogs
+              <AiOutlineCheck /> Teaching
             </li>
             <li className="about-activity">
-              <AiOutlineCheck /> Travelling
+              <AiOutlineCheck /> Experiencing New Things
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Learning something new everyday take you mile far than a lazy genius"{" "}
           </p>
-          <footer className="blockquote-footer">Tilak</footer>
+          <footer className="blockquote-footer">Krishna Kant</footer>
         </blockquote>
       </Card.Body>
     </Card>

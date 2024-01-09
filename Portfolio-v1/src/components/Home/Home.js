@@ -14,7 +14,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header" >
+            <Col md={7} className="home-header" style={{ margin: "30px" }}>
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello! {" "}
               </h1>
@@ -34,7 +34,7 @@ function Home() {
                 src={krishna_image}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxWidth: "450px" }}
               />
             </Col>
           </Row>

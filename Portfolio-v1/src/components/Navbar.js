@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import resumepdf from "../Assets/resume.pdf"
 import {
-  AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiTwotoneContacts
+  AiTwotoneContacts,
+  AiOutlineDownload
 } from "react-icons/ai";
 
-
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -30,6 +26,14 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const [width, setWidth] = useState(1200);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  const isMobile = width <= 890; // Adjust the threshold as needed
 
   return (
     <Navbar
@@ -73,28 +77,28 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
-
                 <AiTwotoneContacts style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link} to="/blogs" onClick={() => updateExpanded(false)}
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="resume-btn">
-
-              <Button
-                href="/resume"
-                className="resume-btn-inner"
-              >
-                Download CV
-              </Button>
-
+                <Container>
+                {isMobile ? (
+                    <Button
+                        variant="primary"
+                        href={resumepdf}
+                        target="_blank"
+                        style={{ maxWidth: "250px" }}
+                      >
+                    <AiOutlineDownload />
+                    &nbsp;Download CV
+                  </Button>
+                ) : (
+                  <Button as={Link} to="/resume" onClick={() => updateExpanded(false)} className="nav-link-button">
+                    <AiOutlineDownload style={{ marginBottom: "2px" }} /> Download CV
+                  </Button>
+                  )}
+                </Container>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

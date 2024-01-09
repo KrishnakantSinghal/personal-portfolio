@@ -17,6 +17,11 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.techstack {
+  color: var(--imp-text-color) !important;
+  font-size: 24px;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -79,6 +84,25 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 38, 51, 0.507) !important;
   backdrop-filter: blur(15px) !important;
+}
+
+@media(max-width: 768px){
+  .sticky {
+    background-color: #185b7aab !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(9, 38, 51, 0.507) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+  .navbar {
+    position: fixed !important;
+    padding: 0.3rem 2rem !important;
+    font-size: 1.2rem !important;
+    background-color: #185b7aab !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(9, 38, 51, 0.507) !important;
+    backdrop-filter: blur(15px) !important;
+  
+  }
 }
 
 .navbar {
@@ -166,7 +190,7 @@ button:focus {
   padding-left: 1rem !important;
 }
 
-.nav-link {
+.nav-link { 
   padding: 0.8rem 1rem !important;
 }
 
@@ -229,11 +253,11 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-top: 10px !important;
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 3rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -277,7 +301,6 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
 }
 
 @media (max-width: 767px) {
@@ -295,7 +318,6 @@ button:focus {
 
 .home-about-description {
   color: rgb(255, 255, 255) !important;
-  padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -576,6 +598,7 @@ textarea[type]:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  color: #d117c2 !important;
 }
 
 @media (max-width: 767px) {
