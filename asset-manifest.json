@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.e038d1a6.css",
+    "main.js": "/personal-portfolio/static/js/main.3f952565.js",
+    "static/js/787.d16e9580.chunk.js": "/personal-portfolio/static/js/787.d16e9580.chunk.js",
+    "static/media/Krishna_formal.png": "/personal-portfolio/static/media/Krishna_formal.725eecebd8e0ba0739b0.png",
+    "static/media/krishna_homepage.png": "/personal-portfolio/static/media/krishna_homepage.c111deec93c415b3f422.png",
+    "static/media/netflix-clone.jpg": "/personal-portfolio/static/media/netflix-clone.29c2b4ff07d35bc96256.jpg",
+    "static/media/ozshop.png": "/personal-portfolio/static/media/ozshop.ed3b5ca6b09efb1610ca.png",
+    "static/media/estore.jpg": "/personal-portfolio/static/media/estore.16248a90531c90d2ca6b.jpg",
+    "static/media/about.png": "/personal-portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/moviezone.jpg": "/personal-portfolio/static/media/moviezone.a851b05a14a5f9440c34.jpg",
+    "static/media/resume.pdf": "/personal-portfolio/static/media/resume.e857f6ee2a36537a43c3.pdf",
+    "static/media/noteKeeper.jpg": "/personal-portfolio/static/media/noteKeeper.a6a02061c89a1b3a8d02.jpg",
+    "static/media/pre.svg": "/personal-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/personal-portfolio/index.html",
+    "main.e038d1a6.css.map": "/personal-portfolio/static/css/main.e038d1a6.css.map",
+    "main.3f952565.js.map": "/personal-portfolio/static/js/main.3f952565.js.map",
+    "787.d16e9580.chunk.js.map": "/personal-portfolio/static/js/787.d16e9580.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e038d1a6.css",
+    "static/js/main.3f952565.js"
+  ]
+}
