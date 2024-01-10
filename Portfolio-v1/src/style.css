@@ -212,6 +212,12 @@ button:focus {
   z-index: 1;
 }
 
+.centerise{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-nav .nav-item a::after {
   content: "";
   position: relative;
@@ -249,11 +255,10 @@ button:focus {
 
 .home-section {
   position: relative;
-
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 10px !important;
+  padding-bottom: 1rem !important;
+  padding-top: 0.5rem !important;
 }
 
 .home-content {
@@ -734,7 +739,6 @@ textarea[type]:focus {
 
 .resume-btn {
   font-size: 1.1em !important;
-  padding-top: 10px !important;
 }
 
 .resume-btn-inner {

@@ -6,7 +6,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import krishna_formal from "../../Assets/Krishna_formal.png";
 import laptopImg from "../../Assets/about.png";
 
 function Home2() {

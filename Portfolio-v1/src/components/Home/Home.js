@@ -15,8 +15,8 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header" style={{ margin: "30px", textAlign: "center"}}>
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+            <Col md={7} className="home-header" style={{ margin: "1rem", textAlign: "center"}}>
+              <h1 style={{ paddingBottom: "1rem" }} className="heading">
                 Hello! {" "}
               </h1>
 
@@ -25,11 +25,11 @@ function Home() {
                 <strong className="main-name"> Krishna Kant Singhal</strong>
               </h1>
 
-              <div style={{padding:20, marginLeft:'1.5rem'}} >
+              <div style={{margin:'inherit', justifyContent:"center"}} >
                 <Type />
               </div>
 
-              <div style={{ paddingTop: "40px"}}>
+              <div style={{ marginTop: "20%"}}>
                 <h4 style={{color: "#70e7f0"}}>Contact me:</h4>
                 <p style={{ fontSize: "1.2rem", marginBottom: "5px" }}>
                   Email:{" "}

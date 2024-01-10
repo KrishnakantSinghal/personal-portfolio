@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import resumepdf from "../Assets/resume.pdf"
 import {
   AiOutlineHome,
-  AiOutlineUser,
-  AiTwotoneContacts,
   AiOutlineDownload
 } from "react-icons/ai";
 
@@ -16,6 +14,8 @@ import {
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [width, setWidth] = useState(1200);
+  const isMobile = width <= 890; // Adjust the threshold as needed
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -27,37 +27,37 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
-  const [width, setWidth] = useState(1200);
-
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
 
-  const isMobile = width <= 890; // Adjust the threshold as needed
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
+    <div style={{marginTop: "1rem"}}>
       <Container>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav
+            style={{display:"block"}}
+           defaultActiveKey="#home"
+           >
+            <div
+              className="centerise"
+            >
+            <Nav.Item>
+              <Button
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+                className="nav-link-button"
+              >
+                <AiOutlineHome style={{ marginBottom: "2px" }} />
+              </Button>
+            </Nav.Item>
+
             <Nav.Item className="resume-btn">
                 <Container>
+               
                 {isMobile ? (
+                  // Button for mobile view
                     <Button
                         variant="primary"
                         href={resumepdf}
@@ -74,10 +74,11 @@ function NavBar() {
                   )}
                 </Container>
             </Nav.Item>
+            </div>
+
           </Nav>
-        </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </div>
   );
 }
 
