@@ -55,32 +55,6 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-                </Nav.Link>
-              </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
-                <AiTwotoneContacts style={{ marginBottom: "2px" }} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="resume-btn">
                 <Container>
                 {isMobile ? (

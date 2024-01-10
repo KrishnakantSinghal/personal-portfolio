@@ -21,7 +21,7 @@ function Home2() {
             <p className="home-about-body">
                 Versatile 
                 <i>
-                  <b className="sky"> Python Developer </b>
+                  <b className="sky"> Software Developer </b>
                 </i>
                  with a passion for solving complex problems through elegant and efficient coding. 
               <br />
