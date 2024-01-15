@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import resumepdf from "../Assets/resume.pdf"
@@ -33,8 +31,7 @@ function NavBar() {
 
 
   return (
-    <div style={{marginTop: "1rem"}}>
-      <Container>
+    <div>
           <Nav
             style={{display:"block"}}
            defaultActiveKey="#home"
@@ -42,42 +39,36 @@ function NavBar() {
             <div
               className="centerise"
             >
-            <Nav.Item>
+            <Nav.Item className="nav-item">
               <Button
                 as={Link}
                 to="/"
                 onClick={() => updateExpanded(false)}
                 className="nav-link-button"
               >
-                <AiOutlineHome style={{ marginBottom: "2px" }} />
+                <AiOutlineHome/>
               </Button>
             </Nav.Item>
 
-            <Nav.Item className="resume-btn">
-                <Container>
-               
+            <Nav.Item className="nav-item">               
                 {isMobile ? (
                   // Button for mobile view
                     <Button
                         variant="primary"
                         href={resumepdf}
                         target="_blank"
-                        style={{ maxWidth: "250px" }}
                       >
                     <AiOutlineDownload />
                     &nbsp;Download CV
                   </Button>
                 ) : (
                   <Button as={Link} to="/resume" onClick={() => updateExpanded(false)} className="nav-link-button">
-                    <AiOutlineDownload style={{ marginBottom: "2px" }} /> Download CV
+                    <AiOutlineDownload/> Download CV
                   </Button>
                   )}
-                </Container>
             </Nav.Item>
             </div>
-
           </Nav>
-      </Container>
     </div>
   );
 }

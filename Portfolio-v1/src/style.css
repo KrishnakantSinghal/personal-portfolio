@@ -112,6 +112,10 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
+.nav-item {
+  padding: 1rem;
+}
+
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
@@ -249,10 +253,6 @@ button:focus {
   z-index: -10;
 }
 
-.home-header {
-  padding-top: 80px !important;
-}
-
 .home-section {
   position: relative;
   background-position: top center;
@@ -267,14 +267,18 @@ button:focus {
   text-align: left;
 }
 
+.home-header{
+  text-align: center;
+  padding-top: 3rem;
+}
+
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-bottom: 1rem;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
 }
 
 .main-name {
@@ -296,7 +300,6 @@ button:focus {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
   }
 
   .Typewriter__cursor {
@@ -306,19 +309,20 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
+  margin-top: 6rem !important;
 }
 
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
+    margin-top: 1rem !important;
     padding-bottom: 2em !important;
   }
 }
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 2rem !important;
 }
 
 .home-about-description {
@@ -330,7 +334,6 @@ button:focus {
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
-  text-align: left;
 }
 
 .home-about-social {
@@ -555,7 +558,7 @@ textarea[type]:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 1rem !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
@@ -570,7 +573,7 @@ textarea[type]:focus {
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
-  display: table !important;
+  display: grid !important;
   box-shadow: 4px 5px 4px 3px rgba(4, 135, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
@@ -779,3 +782,23 @@ textarea[type]:focus {
 }
 
 
+
+
+.box-quote-container {
+  margin-top: 7rem; /* Adjust the margin as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 8px; /* Border radius for rounded corners */
+}
+
+.box-quote {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  color: #badcf3; /* Text color */
+}
+
+.box-quote-author {
+  display: block;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-style: italic; /* Italics for the citation */
+  color: #0ea9b4; /* Color for the citation */
+}

@@ -48,7 +48,6 @@ function Home2() {
               Whenever possible, I also apply my passion for developing products
               That makes other life <b className="sky">easier and secure.</b>
 
-
             </p>
           </Col>
           <Col md={4} className="myAvtar">

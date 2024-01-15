@@ -11,12 +11,11 @@ import About from "../About/About";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header" style={{ margin: "1rem", textAlign: "center"}}>
-              <h1 style={{ paddingBottom: "1rem" }} className="heading">
+            <Col md={7} className="home-header">
+              <h1 className="heading">
                 Hello! {" "}
               </h1>
 
@@ -25,11 +24,11 @@ function Home() {
                 <strong className="main-name"> Krishna Kant Singhal</strong>
               </h1>
 
-              <div style={{margin:'inherit', justifyContent:"center"}} >
+              <div style={{minHeight:"35px"}} >
                 <Type />
               </div>
 
-              <div style={{ marginTop: "20%"}}>
+              <div style={{ marginTop: "6rem"}}>
                 <h4 style={{color: "#70e7f0"}}>Contact me:</h4>
                 <p style={{ fontSize: "1.2rem", marginBottom: "5px" }}>
                   Email:{" "}
@@ -51,12 +50,10 @@ function Home() {
                 src={krishna_image}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxWidth: "450px" }}
               />
             </Col>
           </Row>
         </Container>
-      </Container>
       <Home2 />
       <About/>
       <Home3 />

@@ -32,6 +32,13 @@ function AboutCard() {
             "Learning something new everyday take you mile far than a lazy genius"{" "}
           </p>
           <footer className="blockquote-footer">Krishna Kant</footer>
+
+          <div className="box-quote-container">
+            <div className="box-quote">
+              "It’s not about how fast you can go, but how well you can go fast."
+            </div>
+            <cite className="box-quote-author">— Jim Highsmith</cite>
+          </div>
         </blockquote>
       </Card.Body>
     </Card>

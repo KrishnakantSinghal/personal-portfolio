@@ -4,14 +4,13 @@ import Typewriter from "typewriter-effect";
 function Type() {
   return (
     <Typewriter
-      
       options={{
         strings: [
           "Software Developer",
           "Python Developer",
           "Full-Stack Developer",
           "ReactJS Developer",
-          "Django Developer"
+          "Django Developer",
         ],
         autoStart: true,
         loop: true,
